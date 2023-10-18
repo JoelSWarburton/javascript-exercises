@@ -1,15 +1,20 @@
 const convertToCelsius = function(tempFahrenheit) {
-  tempCelsius = (tempFahrenheit - 32) * (5/9);
-  tempCelsius = Math.round(tempCelsius * 10) / 10
+  tempCelsius = round((tempFahrenheit - 32) * (5/9));
+
+  
   return tempCelsius;
 };
 
 const convertToFahrenheit = function(tempCelsius) {
 
-  tempFahrenheit = tempCelsius * (9/5) + 32
-  tempFahrenheit = Math.round(tempFahrenheit * 10) / 10;
+  tempFahrenheit = round(tempCelsius * (9/5) + 32);
+
   return tempFahrenheit;
 };
+
+const round = function(value) {
+  return Math.round(value * 10) / 10;
+}
 
 // Do not edit below this line
 module.exports = {
