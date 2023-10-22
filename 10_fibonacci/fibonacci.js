@@ -12,6 +12,7 @@ const fibonacci = function(number) {
         return 1;
     }
  
+    //start at 3 number in sequence;
     for(let i = 3; i <= number; i++) {
         let temp = first + second;
         first = second;
